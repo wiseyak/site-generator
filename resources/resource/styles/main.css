@@ -1,0 +1,278 @@
+/* Base Styles */
+
+body {
+  font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#444;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight:600;
+  margin-bottom:0.3em;
+}
+
+h2 {
+  font-size: 3.4rem;
+  margin-bottom:0.1em;
+}
+
+p {
+  font-size:1.3em;
+  font-weight:300;
+  margin-bottom:0.4em;
+  color:#5f5f5f;
+}
+
+.wise-blue {
+  background-color:#4A90E2;
+}
+
+.wise-green {
+  background-color:#20CD9C;
+}
+
+input.button-primary {
+  font-size:1.1em;
+  font-weight:600;
+  text-transform:none;
+  text-decoration:none;
+}
+
+.wise-primary-link {
+  font-size:1.4em;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* Desktop only styles */
+.wise-desktop { display: none; } 
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .wise-desktop { display:inline; }
+  .wise-mobile { display:none; }
+
+}
+
+/* Sections */
+
+.wise-section {
+  margin:8em 0;
+}
+
+.wise-section img {
+  display:block;
+  margin:auto;
+  padding-bottom:1em;
+}
+
+.wise-section li {
+  font-weight:300;
+  font-size:1.3em;
+  line-height:1.3em;
+}
+
+.spacer {
+  height:1.6em;
+  width:100%;
+}
+
+/* Homepage */
+
+.wise-hero {
+  margin-top:3em;
+}
+
+.wise-hero img {
+  display:block;
+  margin:auto;
+  margin-bottom:3em;
+}
+
+.wise-hero form {
+  margin-top:1.4em;
+}
+
+div#submitted {
+  height:80px;
+  line-height:80px;
+  background-color:#4A90E2;
+  color:#fff;
+}
+
+/* Employees */
+
+.service {
+  padding:0.6em 0;
+}
+
+.service img {
+  height:40px;
+  float:left;
+  padding-right:30px;
+}
+
+.service span {
+  font-size:1.3em;
+  font-weight:300;
+  line-height:40px;
+}
+
+/* About us */
+
+.person {
+  margin-top:2em;
+}
+
+.person .name {
+  font-weight:600;
+}
+
+/* Contact */
+
+/* === Navigation === */
+
+img.logo {
+  /*height:16px;*/
+  width:132px;
+  margin-top:10px;
+  float:left;
+}
+
+div.navbar {
+  border-bottom:1px solid #ccc;
+  min-height: 55px;
+}
+
+ul.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float:right;
+}
+
+li.navbar-item {
+  float:left;
+  margin:0;
+}
+
+li a.navbar-link {
+  display:inline-block;
+  padding:18px 24px;
+  text-decoration: none;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:0.8em;
+  color:#555;
+}
+
+li a.navbar-link:hover {
+  color:#999;
+}
+
+li.navbar-item .button {
+  position:relative;
+  top:8px;
+}
+
+li.navbar-dropdown {
+  display:inline-block;
+  position:relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left:14px;
+  top:44px;
+  background-color: #fff;
+  min-width: 120px;
+  z-index:1000;
+  padding:6px 12px;
+  border:1px solid #ddd;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow: 0 0 10px rgba(45,45,45,0.08);
+}
+
+.dropdown-content a {
+  display: block !important;
+  padding:0px !important;
+  text-transform:none !important;
+  line-height:2.4em;
+}
+
+.navbar-dropdown:hover .dropdown-content {
+ display: block;
+}
+
+/* Smaller than phablet */
+@media (max-width: 550px) {
+
+  img.logo {
+    height:22px;
+    width:100%;
+  }
+
+  div.navbar {
+    text-align:center;
+  }
+
+  ul.navbar-list {
+    text-align:center;
+  }
+
+  li.navbar-item:last-of-type {
+    display:none;
+  }
+}
+
+/* Employers */
+
+.wise-section#cost-savings span.arrow {
+  color:#4A90E2;
+  padding-right:8px;
+}
+
+/* Footer */
+
+.footer {
+  background-color:#F1F1F1;
+  width:100%;
+  padding:3em 0;
+  line-height:1.6em;
+}
+
+.footer h6 {
+  margin:0;
+  font-weight:600;
+  text-transform:uppercase;
+  color:#5F5F5F;
+}
+
+.footer a, .footer span {
+  display:block;
+  font-size:0.9em;
+  font-weight:300;
+  color:#777;
+  text-decoration:none;
+}
+
+.footer a:hover {
+  color:#999;
+}
+
+.footer .newsletter-signup {
+  padding-bottom:3em;
+  margin-bottom:3em;
+  border-bottom:1px solid #ccc;
+}
+
+.footer .newsletter-signup input {
+  height:50px;
+  padding:16px 20px;
+  margin-top:1em;
+  font-size:20px;
+  line-height:0px;
+}
